@@ -4,12 +4,12 @@
 def frequencies(items):
     frequencies = {}
     for i in items:
-        currentItem = i
-        if i in frequencies: 
-            frequencies[str(currentItem)] += 1 
+        currentItem = str(i)
+        if currentItem in frequencies: 
+            frequencies[currentItem] += 1 
         else:
-            frequencies[str(currentItem)] = 1
+            frequencies[currentItem] = 1
     return frequencies
 # return call is the last statement of a function
 
-#print(frequencies(['a', 'a', 'b', 'b', 'b', 'c']))
+print(frequencies(['0', 4,4,'4','d','d','e',0,'a','d','4']))
